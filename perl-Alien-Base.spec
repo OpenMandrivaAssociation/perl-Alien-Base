@@ -62,6 +62,6 @@ Alien::Base::Authoring manpage.
 %make_install
 
 %files
-%doc Changes LICENSE MYMETA.yml README
+%doc Changes LICENSE README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*

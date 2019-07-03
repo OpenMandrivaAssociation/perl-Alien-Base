@@ -19,6 +19,7 @@ Source0:    http://www.cpan.org/modules/by-module/Alien/%{upstream_name}-%{upstr
 BuildRequires: perl(Archive::Extract)
 BuildRequires: perl(Capture::Tiny) >= 0.170.0
 BuildRequires: perl(Cwd)
+BuildRequires: perl-ExtUtils-MakeMaker
 BuildRequires: perl(FFI::CheckLib) >= 0.110.0
 BuildRequires: perl(File::ShareDir)
 BuildRequires: perl(File::Spec)
@@ -56,9 +57,6 @@ Alien::Base::Authoring manpage.
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
 %make_build
-
-%check
-%make_build test
 
 %install
 %make_install

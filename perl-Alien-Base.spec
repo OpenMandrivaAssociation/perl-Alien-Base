@@ -6,7 +6,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    1
+Release:    2
 
 Summary:    API Reference for Alien:: Authors
 License:    GPL+ or Artistic
@@ -52,10 +52,10 @@ learn more about the system as a whole please see the
 Alien::Base::Authoring manpage.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%autosetup -n %{upstream_name}-%{upstream_version} -p1
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make_build
 
 %install
@@ -63,5 +63,5 @@ Alien::Base::Authoring manpage.
 
 %files
 %doc Changes LICENSE README
-%{_mandir}/man3/*
+%doc %{_mandir}/man3/*
 %{perl_vendorlib}/*

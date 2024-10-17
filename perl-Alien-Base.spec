@@ -11,7 +11,7 @@ Release:    2
 Summary:    API Reference for Alien:: Authors
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        http://search.cpan.org/dist/%{upstream_name}
+Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Alien/%{upstream_name}-%{upstream_version}.tar.gz
 
 # for test purposes

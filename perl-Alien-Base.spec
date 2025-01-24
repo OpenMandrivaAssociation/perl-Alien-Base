@@ -17,23 +17,23 @@ Source0:    https://www.cpan.org/modules/by-module/Alien/%{upstream_name}-%{upst
 # for test purposes
 
 BuildRequires: perl(Archive::Extract)
-BuildRequires: perl(Capture::Tiny) >= 0.170.0
+BuildRequires: perl(Capture::Tiny)
 BuildRequires: perl(Cwd)
 BuildRequires: perl-ExtUtils-MakeMaker
-BuildRequires: perl(FFI::CheckLib) >= 0.110.0
+BuildRequires: perl(FFI::CheckLib)
 BuildRequires: perl(File::ShareDir)
 BuildRequires: perl(File::Spec)
 BuildRequires: perl(File::Temp)
-BuildRequires: perl(File::chdir) >= 0.100.500
+BuildRequires: perl(File::chdir)
 BuildRequires: perl(FindBin)
-BuildRequires: perl(HTTP::Tiny) >= 0.44.0
+BuildRequires: perl(HTTP::Tiny)
 BuildRequires: perl(JSON::PP)
 BuildRequires: perl(List::MoreUtils)
 BuildRequires: perl(Perl::OSType)
 BuildRequires: perl(Shell::Config::Generate)
 BuildRequires: perl(Shell::Guess)
 BuildRequires: perl(Sort::Versions)
-BuildRequires: perl(Test::More) >= 0.940.0
+BuildRequires: perl(Test::More)
 #BuildRequires: perl(Test2::Bundle::Extended)
 BuildRequires: perl(Text::ParseWords)
 BuildRequires: perl(URI)

@@ -35,7 +35,7 @@ BuildRequires: perl(Shell::Guess)
 BuildRequires: perl(Sort::Versions)
 BuildRequires: perl(Test::More) >= 0.940.0
 #BuildRequires: perl(Test2::Bundle::Extended)
-BuildRequires: perl(Text::ParseWords) >= 3.260.0
+BuildRequires: perl(Text::ParseWords)
 BuildRequires: perl(URI)
 BuildRequires: perl(parent)
 BuildRequires: pkgconfig(zlib)

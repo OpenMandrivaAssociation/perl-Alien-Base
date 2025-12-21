@@ -16,6 +16,7 @@ Source0:    https://www.cpan.org/modules/by-module/Alien/%{upstream_name}-%{upst
 
 # for test purposes
 
+BuildRequires:	make
 BuildRequires: perl(Archive::Extract)
 BuildRequires: perl(Capture::Tiny)
 BuildRequires: perl(Cwd)

@@ -1,18 +1,16 @@
 %define upstream_name    Alien-Base
-%define upstream_version 0.042
-
 %{?perl_default_filter}
 %global __requires_exclude_from %{?__requires_exclude_from:%__requires_exclude_from|}^%{_docdir}
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Version:    0.042
+Release:    4
 
 Summary:    API Reference for Alien:: Authors
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    https://www.cpan.org/modules/by-module/Alien/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://metacpan.org/dist/%{upstream_name}
+Source0:    https://www.cpan.org/modules/by-module/Alien/%{upstream_name}-%{version}.tar.gz
 
 # for test purposes
 
@@ -53,7 +51,7 @@ learn more about the system as a whole please see the
 Alien::Base::Authoring manpage.
 
 %prep
-%autosetup -n %{upstream_name}-%{upstream_version} -p1
+%autosetup -n %{upstream_name}-%{version} -p1
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
